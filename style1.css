@@ -1,0 +1,81 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.main{
+    perspective: 10px;
+    overflow-x: hidden;
+    overflow-y: auto;
+    height: 100vh; 
+}
+
+.container{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform-style: preserve-3d;
+    height: 100%;
+    z-index: -1;
+}
+.background{
+    position: absolute;
+    z-index: -1;
+    transform: translateZ(-40px) scale(6);
+    object-fit: cover;
+}
+.foreground{
+    position: absolute;
+    top: 95%;
+    z-index:-1;
+    transform: translateZ(-10px) scale(3);
+    object-fit: cover;
+}
+#head1{
+    border-radius: 18px;
+    color:black;
+    text-shadow: 1px 1px brown;
+    /* background: linear-gradient(to right,rgb(145, 3, 3),blue); */
+    transform: translateY(-280px);
+    font-size: 4rem;
+    letter-spacing: 1px;
+}
+
+.cont{
+    color: white;
+    background-color: grey;
+    box-sizing: border-box;
+}
+#text{
+    font-size: 1rem;
+}
+h1{
+    padding: 0 110px;
+    text-shadow: 1.5px 1.5px brown;
+    font-size: 2rem;
+}
+h2{
+    padding: 0 110px;
+    text-shadow: 1.5px 1.5px brown;
+    font-size: 3rem;
+}
+.bg{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+    height: 600px;
+}
+.bg1{
+    background-image: url(uni4.jpg);
+}
+.bg2{
+    background-image: url(uni2.webp);
+}
+.bg3{
+    background-image: url(uni5.jpg);
+}
